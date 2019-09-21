@@ -1,9 +1,6 @@
-const baseURL =
-  process.env.DEPLOY_ENV_DOCS === 'GH_PAGES'
-    ? {
-        base: '/Ascendere-Platform/'
-      }
-    : {};
+const baseURL = {
+  base: '/GUIDELINES/'
+  };
 
 const nav = {
   nav: [
