@@ -1,0 +1,28 @@
+dist: trusty
+sudo: required
+
+language: node_js
+node_js:
+  - '10'
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install -g vuepress
+
+script:
+  - echo "Skipping tests"
+  - vuepress build
+
+deploy:
+  - provider: pages
+    local_dir: ./dist
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    keep_history: true
