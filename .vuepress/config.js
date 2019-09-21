@@ -1,3 +1,10 @@
+const baseURL =
+  process.env.DEPLOY_ENV_DOCS === 'GH_PAGES'
+    ? {
+        base: '/Ascendere-Platform/'
+      }
+    : {};
+
 const nav = {
   nav: [
     {
@@ -24,11 +31,11 @@ const sidebar = {
 };
 
 const git = {
-  repo: 'InDevelopmentCompany/Ascendere-Platform',
+  repo: 'baesparza/GUIDELINES',
 
   repoLabel: 'Contribuye!',
 
-  docsDir: 'docs',
+  docsDir: '.',
 
   docsBranch: 'master',
 
@@ -72,5 +79,7 @@ module.exports = {
 
   dest: 'dist',
 
+  ...baseURL,
+  
   ...themeConfig
 };
