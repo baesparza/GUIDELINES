@@ -14,7 +14,7 @@
 **Evitar**
 
 - camelCase: es difícil escanear rápidamente.
-- Prefijos descriptivos o notación húngara como sp_o tbl.
+- Prefijos descriptivos o notación húngara como `sp_` o `tbl_`.
 - Plurales: use el término colectivo más natural donde sea posible.
 - Identificadores entre comillas: si debe usarlos, entonces adhiérase a las comillas simples.
 - Los principios de diseño orientado a objetos no deben aplicarse a estructuras de bases de datos o SQL.
@@ -23,12 +23,12 @@
 
 ### 2.1. General
 
-- Asegúrese de que el nombre sea único y no exista como palabra clave reservada .
-- Mantén la longitud a un máximo de 30 bytes; en la práctica, esto es de 30 caracteres a menos que esté utilizando un conjunto de caracteres de varios bytes.
+- El nombre no debe existir como palabra clave reservada.
+- Mantén la longitud a un máximo de 30 bytes o 30 caracteres.
 - Los nombres deben comenzar con una letra y no pueden terminar con un guión bajo.
-- Solo use letras, números y guiones bajos en los nombres.
-- Evite el uso de múltiples guiones bajos consecutivos; estos pueden ser difíciles de leer.
-- Use guiones bajos donde naturalmente incluiría un espacio en el nombre (el primer nombre se convierte first_name).
+- Solo use letras minusculas, números y guiones bajos en los nombres.
+- Evite el uso de múltiples guiones bajos consecutivos.
+- Use guiones bajos donde naturalmente incluiría un espacio en el nombre. Ejemplo `first_name`.
 - Evite las abreviaturas y, si tiene que usarlas, asegúrese de que se entiendan comúnmente.
 
 ```sql
@@ -36,17 +36,24 @@ SELECT first_name
   FROM staff;
 ```
 
-### 2.2. Table
+### 2.2. Tabla / Table
 
-Para nombrar tablas use un nombre colectivo o, menos idealmente, una forma plural. Por ejemplo (en orden de preferencia) staff y employees. No se usa prefijos descriptivo de tablas como `tbl_`. Nunca se nombra a una tabla con el mismo nombre que una de sus columnas y viceversa. Evita, cuando sea posible, concatenar dos nombres de tabla para crear el nombre de una tabla de relaciones. En lugar de `cars_mechanics` usa `services`.
+- Para nombrar tablas use un nombre colectivo o una forma plural. Ejemplo: `staff` o `employees`.
+- No se usa prefijos de tablas como `tbl_`.
+- Nunca nombre a una tabla con el mismo nombre que una de sus columnas y viceversa.
+- Evita, cuando sea posible, concatenar dos nombres de tabla para crear el nombre de una tabla de relaciones. En lugar de `cars_mechanics` usa `services`.
 
-### 2.3. Columns
+### 2.3. Columnas / Columns
 
-Los nombres siempre estan escritos en singular y donde sea posible evitar usr `id` como llave primaria para la tabla. No agregue columnas con el mismo nombre que la tabla o viceversa y Siempre use minúsculas/lowercase.
+- Los nombres siempre estan escritos en singular.
+- Recomendamos no usar `id` como llave primaria para la tabla. No agregue columnas con el mismo nombre que la tabla o viceversa.
+- Siempre use minúsculas/lowercase.
 
-### 2.4. Alias y Correlaciones
+### 2.4. Alias y Correlaciones / AS
 
-Debe relacionarse de alguna manera con el objeto. Como regla general, el nombre de la correlación debe ser la primera letra de cada palabra en el nombre del objeto.En el caso de que ya exista una correlación con el mismo nombre, entonces agregue un número. Incluya siempre la palabra clave `AS` ya que facilita la lectura, ya que es explícita. Para los datos calculados ( SUM()o AVG()) use el nombre que le daría si fuera una columna definida en el esquema.
+- Debe relacionarse de alguna manera con el objeto.
+- El nombre de la correlación debe ser la primera letra de cada palabra en el nombre del objeto. En el caso de que ya exista una correlación con el mismo nombre, entonces agregue un número. 
+- Incluya siempre la palabra clave `AS` ya que facilita la lectura.
 
 ```sql
 SELECT first_name AS fn
@@ -55,14 +62,10 @@ SELECT first_name AS fn
     ON s2.mentor_id = s1.staff_num;
 ```
 
-```sql
-SELECT SUM(s.monitor_tally) AS monitor_total
-  FROM staff AS s;
-```
+### 2.5. Procedimientos Almacenados / Stored Procedure
 
-### 2.5. Procedimientos almacenados
-
-El nombre debe contener un verbo y no coloque el prefijo `sp_` o ningún otro prefijo descriptivo o notación húngara.
+- El nombre debe contener un verbo.
+- No coloque el prefijo `sp_` o ningún otro prefijo.
 
 ### 2.6. Sufijos uniformes
 
