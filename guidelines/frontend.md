@@ -46,45 +46,6 @@ Asegúrese de comprender la semántica de los elementos que está utilizando. Es
 </h1>
 ```
 
-### 1.2. Brevedad
-
-Mantenga su código conciso. Olvídate de tus viejos hábitos XHTML.
-
-```html
-<!-- bad -->
-<!doctype html>
-<html lang=en>
-  <head>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8" />
-    <title>Contact</title>
-    <link rel=stylesheet href=style.css type=text/css />
-  </head>
-  <body>
-    <h1>Contact me</h1>
-    <label>
-      Email address:
-      <input type=email placeholder=you@email.com required=required />
-    </label>
-    <script src=main.js type=text/javascript></script>
-  </body>
-</html>
-
-<!-- good -->
-<!doctype html>
-<html lang=en>
-  <meta charset=utf-8>
-  <title>Contact</title>
-  <link rel=stylesheet href=style.css>
-
-  <h1>Contact me</h1>
-  <label>
-    Email address:
-    <input type=email placeholder=you@email.com required>
-  </label>
-  <script src=main.js></script>
-</html>
-```
-
 ### 1.3. Accesibilidad
 
 La accesibilidad no debería ser una ocurrencia tardía. No tiene que ser un experto en WCAG para mejorar su sitio web, puede comenzar de inmediato arreglando las pequeñas cosas que hacen una gran diferencia, como:
