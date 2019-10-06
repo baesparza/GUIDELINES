@@ -2,7 +2,7 @@
 
 ## 1. HTML
 
-### 1.1. Semantica
+### 1.1. Semántica
 
 HTML5 nos proporciona muchos elementos semánticos destinados a describir con precisión el contenido. Asegúrese de beneficiarse de su rico vocabulario.
 
@@ -48,7 +48,7 @@ Asegúrese de comprender la semántica de los elementos que está utilizando. Es
 
 ### 1.3. Accesibilidad
 
-La accesibilidad no debería ser una ocurrencia tardía. No tiene que ser un experto en WCAG para mejorar su sitio web, puede comenzar de inmediato arreglando las pequeñas cosas que hacen una gran diferencia, como:
+La accesibilidad no debería ser una ocurrencia tardía. No tiene que ser un experto en WCAG (Web Content Accessibility Guidelines) para mejorar su sitio web, puede comenzar de inmediato arreglando las pequeñas cosas que hacen una gran diferencia, como:
 
 - aprendiendo a usar el atributo `alt` correctamente
 - asegurándose de que sus enlaces y botones estén marcados como tales (sin atrocidades como `<div class=button>`)
@@ -287,7 +287,7 @@ div {
 
 ### 2.10. Idioma
 
-Prefiero el inglés a las matemáticas.
+Prefiera el inglés a las matemáticas.
 
 ```css
 /* bad */
@@ -303,7 +303,7 @@ Prefiero el inglés a las matemáticas.
 
 ### 2.11. Prefijos
 
-Mata los prefijos de proveedores obsoletos de forma agresiva. Si necesita usarlos, insértelos antes de la propiedad estándar.
+Mate los prefijos de proveedores obsoletos de forma agresiva. Si necesita usarlos, insértelos antes de la propiedad estándar.
 
 ```css
 /* bad */
@@ -328,7 +328,7 @@ div {
 
 ### 2.12. Animaciones
 
-Favorece las transiciones sobre las animaciones. Evite animar otras propiedades que `opacity`y `transform`.
+Favorezca las transiciones sobre las animaciones. Evite animar otras propiedades que `opacity`y `transform`.
 
 ```css
 /* bad */
