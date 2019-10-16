@@ -1,27 +1,51 @@
 const baseURL = {
   base: '/GUIDELINES/'
-  };
+};
 
 const nav = {
   nav: [
     {
-      text: 'Buenas Practicas',
-      link: '/guidelines/'
+      text: 'StyleGuides',
+      link: '/styleguides/'
+    },
+    {
+      text: 'Reglas',
+      link: '/'
+    },
+    {
+      text: 'Formatos',
+      link: '/'
+    },
+    {
+      text: 'Stack Tecnológico',
+      link: '/'
+    },
+    {
+      text: 'Herramientas',
+      link: '/'
     },
     {
       text: 'GitHub',
-      link: 'https://github.com/InDevelopmentCompany/Ascendere-Platform/'
+      link: 'https://github.com/baesparza/GUIDELINES/'
     }
   ]
 };
 
 const sidebar = {
   sidebar: {
-    '/guidelines/': [
+    '/styleguides/': [
       {
-        title: 'Buenas Practicas',
+        title: 'Estándares de Programación',
         collapsable: false,
-        children: ['git', 'database', 'document', 'frontend', 'api', 'angular', 'python']
+        children: [
+          'git',
+          'database',
+          'document',
+          'frontend',
+          'api',
+          'angular',
+          'python'
+        ]
       }
     ]
   }
@@ -54,7 +78,7 @@ const themeConfig = {
   themeConfig: {
     home: true,
 
-    logo: 'https://innovaciondocente.utpl.edu.ec/assets/images/AscendereLogo.svg',
+    logo: '/logo.png',
 
     ...nav,
 
@@ -69,14 +93,45 @@ const themeConfig = {
 };
 
 module.exports = {
-  title: 'Buenas Practicas',
-  description: 'Buenas Practicas para trabajar en proyectos del Laboratorio Ascendere.',
+  title: 'Guidelines',
+  description: 'Guiás del Laboratorio Ascendere',
 
   serviceWorker: true,
 
   dest: 'dist',
 
   ...baseURL,
-  
-  ...themeConfig
+
+  ...themeConfig,
+
+  head: [
+    ['link', { rel: 'icon', href: `/logo.png` }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
+    ],
+    [
+      'link',
+      { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }
+    ],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: '/icons/safari-pinned-tab.svg',
+        color: '#3eaf7c'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'msapplication-TileImage',
+        content: '/icons/msapplication-icon-144x144.png'
+      }
+    ],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+  ]
 };
