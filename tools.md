@@ -24,11 +24,11 @@ Tenemos canales donde se encuentra todo el equipo del laboratorio; Por ejemplo *
   
 Si de llevar control de versiones se trata, nosotros usamos **git**. Esta es la herramienta que más usamos para desarrollar software. Todos los proyectos llevan un control de versiones con git. Y facilita la integración de nuevos cambios entre los colaboradores de un proyecto. 
   
-  
+Aquí hay algunas configuraciones para ayudarte a comenzar
+
 ```sh 
-# Aquí hay algunas configuraciones para ayudarte a comenzar 
-$ git config --global user.name "User Name" 
-$ git config --global user.email username@utpl.edu.ec # recuerda usar tu usuario UTPL 
+$ git config --global user.name "User Name"
+$ git config --global user.email username@utpl.edu.ec # recuerda usar tu correo UTPL 
 ``` 
   
 También usamos las ramas de git para no afectar al trabajo de los demás al momento de desarrollar. Para conocer más sobre las ramas y buenas prácticas con git visita nuestra Guía para [Trabajar con GIT](/ styleguides/git).
