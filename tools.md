@@ -31,7 +31,7 @@ $ git config --global user.name "User Name"
 $ git config --global user.email username@utpl.edu.ec # recuerda usar tu correo UTPL 
 ``` 
   
-También usamos las ramas de git para no afectar al trabajo de los demás al momento de desarrollar. Para conocer más sobre las ramas y buenas prácticas con git visita nuestra Guía para [Trabajar con GIT](/ styleguides/git).
+También usamos las ramas de git para no afectar al trabajo de los demás al momento de desarrollar. Para conocer más sobre las ramas y buenas prácticas con git visita nuestra Guía para [Trabajar con GIT](/styleguides/git).
 
 ### GitLab <small>(repositorio)</small> 
   
@@ -59,7 +59,7 @@ También nos permite documentar nuestras APIS, todas las rutas de nuestro servid
 <img src="http://komar.edu.iq/it/wp-content/uploads/2018/04/mysql_workbench_service_provider_india.jpg" alt="Git Logo" height="200px"> 
 </p> 
   
-Para modelar bases de datos preferimos workbench, con esta herramienta podemos administrar visualmente las bases de datos. 
+Para modelar bases de datos preferimos workbench, con esta herramienta podemos ver nuestros modelos de base de datos. Para empezar a modelar revisa nuestra [Guía para modelar BD´s](/styleguides/database). 
   
 ### Figma <small>(diseño - recomendación)</small> 
   
