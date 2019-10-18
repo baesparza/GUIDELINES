@@ -40,7 +40,7 @@ const sidebar = {
       {
         title: 'Estándares de Programación',
         collapsable: false,
-        children: ['git', 'database', 'document', 'frontend', 'api', 'angular', 'python']
+        children: ['git', 'database', 'document', 'frontend', 'api']
       }
     ]
   }
