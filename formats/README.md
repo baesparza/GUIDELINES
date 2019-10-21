@@ -6,7 +6,7 @@ acérquese para pedir el acceso al gestor del Laboratorio (aka: Charlie Cárdena
   
 ## Propuesta de Proyecto 
   
-**Nota:** El archivo para la propuesta de proyecto lo puede descargar de [este sitio](/FormatoRegistroActividades.xlsx). 
+**Nota:** El archivo para la propuesta de proyecto lo puede descargar de [este sitio](/GUIDELINES/FormatoRegistroActividades.xlsx). 
   
 1. Cargar el archivo a la carpeta asignada para e proyecto. 
 2. Edita el nombre con el formato "Propuesta - [Nombre Proyecto]". 
@@ -16,7 +16,7 @@ acérquese para pedir el acceso al gestor del Laboratorio (aka: Charlie Cárdena
   
 ## Registro de Actividades 
   
-**Nota:** El archivo para el registro de actividades lo puede descargar de [este sitio](/FormatoRegistroActividades.xlsx). 
+**Nota:** El archivo para el registro de actividades lo puede descargar de [este sitio](/GUIDELINES/FormatoRegistroActividades.xlsx). 
   
 1. Cargar el archivo descargado a la carpeta asignada para el proyecto. 
 2. Edita el nombre con el formato "Registro Actividades - [Nombre Persona]". 
