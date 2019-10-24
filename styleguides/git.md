@@ -48,9 +48,9 @@ footer
 
 El titulo consiste en el tipo y asunto del mensaje.
 
-### 2.1. Type/Tipo
+### 2.1. Type/Tipo <small>Requerido</small>
 
-El tipo es contenido en el titulo y puede ser de alguno de los siguientes casos:
+Este es el formato para escribir "tipo" en los commits de git:
 
 **feat**: Una nueva caracteristica.
 
@@ -66,17 +66,21 @@ El tipo es contenido en el titulo y puede ser de alguno de los siguientes casos:
 
 **chore**: Actualizacion de tareas de build, configuracion del admin. de paquetes; Sin cambios en el codigo.
 
-### 2.2. Subject/Asunto
+##### Nota: 
+
+Puedes escribir entre paréntesis si quieres hacer  referencia a una funcionalidad especifica ejemplo: **fix(user service)** o **feat(*)**
+
+### 2.2. Subject/Asunto <small>Requerido</small>
 
 El asunto no debe contener mas de 50 caracteres, debe iniciar con una letra mayuscula y no terminar con un punto. Debemos ser imperativos al momento de redactar nuestro commit, es decir hay que ser objetivos y muy importante tenemos que acostumbrarnos a escribirlos en Ingles esto es una de las mejores practicas que podemos tener en nuestros commits.
 
 Cuando hablo de ser imperativos hago referencia a este sencillo ejemplo: usar change en lugar de "changed" o "changes".
 
-### 2.3. Body/Cuerpo
+### 2.3. Body/Cuerpo <small>Opcional</small>
 
 No todos los commits son lo suficientemente complejos como para necesitar de un cuerpo, sin embargo es opcional y se usan en caso de que el commit requiera una explicacion y contexto. Utilizamos el cuerpo para explicar el ¿Que y Porque? de un commit y no el ¿Como? Al escribir el cuerpo, requerimos de una linea en blanco entre el titulo y el cuerpo, ademas debemos limitar la longitud de cada linea a no mas de 72 caracteres.
 
-### 2.4. Footer/Pie
+### 2.4. Footer/Pie <small>Opcional</small>
 
 El pie es opcional al igual que el cuerpo, pero este es usado para el seguimiento de los IDs con incidencias.
 
